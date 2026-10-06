@@ -1,0 +1,9 @@
+<div class="pbi-container">
+      <div #reportContainer class="report-wrapper"></div>
+
+      <!-- Fallback display when missing required embed properties -->
+      <div *ngIf="!reportId || !accessToken" class="pbi-placeholder">
+        <p> Power BI parameters missing.</p>
+        <small>Provide a valid <code>reportId</code> and <code>accessToken</code> to render.</small>
+      </div>
+    </div>

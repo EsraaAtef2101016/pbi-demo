@@ -1,0 +1,12 @@
+<div class="iframe-container">
+      @if (safeEmbedUrl) {
+        <iframe
+          [src]="safeEmbedUrl"
+          frameborder="0"
+          allowFullScreen="true"
+          class="powerbi-iframe">
+        </iframe>
+      } @else {
+        <div class="placeholder">Please enter a valid report URL or required IDs</div>
+      }
+    </div>
