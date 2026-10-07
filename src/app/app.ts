@@ -51,7 +51,7 @@ applyreportId(): void {
   if (newReportId) {
     this.reportId.set(newReportId);
 
-    // تفعيل وتحديث الرابط بناءً على הـ Report ID الجديد
+   
     const newUrl = `https://app.powerbi.com/reportEmbed?reportId=${newReportId}&groupId=${this.groupId()}&autoAuth=true`;
     this.iframeUrl.set(newUrl);
   }
